@@ -1,0 +1,66 @@
+
+[
+    {
+        "id":1,
+        "name":"story book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":0,
+        "category":"free",
+        "image": "/book1img.jpg"    },
+    {
+        "id":2,
+        "name":"comedy book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":20,
+        "category":"entertainment",
+        "image": "/book1img.jpg"    },
+    {
+        "id":3,
+        "name":"sports book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":50,
+        "category":"sports",
+        "image": "/book1img.jpg"    },{
+        "id":4,
+        "name":"music book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":100,
+        "category":"song",
+        "image": "/book1img.jpg"    },
+    {
+        "id":5,
+        "name":"food book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":200,
+        "category":"reciepe",
+        "image": "/book1img.jpg"    },
+    {
+        "id":6,
+        "name":"story book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":0,
+        "category":"free",
+        "image": "/book1img.jpg"    },
+    {
+        "id":7,
+        "name":"story book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":0,
+        "category":"free",
+        "image": "/book1img.jpg"    },
+    {
+        "id":8,
+        "name":"happy book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":0,
+        "category":"free",
+        "image":"/book1img.jpg"
+    },
+    {
+        "id":9,
+        "name":"story book",
+        "title":"Lorem,ipsum dolor sit omet cnsecutor odipisicing .",
+        "price":0,
+        "category":"free",
+"image": "/book1img.jpg"    }
+]
