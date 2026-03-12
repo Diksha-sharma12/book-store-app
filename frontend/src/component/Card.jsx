@@ -1,5 +1,4 @@
 import React from 'react';
-import bookim from "../../public/book1img.jpg"
 import Freebook from './Freebook';
 function Card({ item }) {
   if (!item) return null;

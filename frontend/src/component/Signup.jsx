@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Login from './Login';
 import { useForm } from "react-hook-form"
+import axios from "axios"
+import toast,{Toaster} from 'react-hot-toast';
 const Signup = () => {
     const {
     register,
@@ -9,7 +11,26 @@ const Signup = () => {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => console.log(data)
+  const onSubmit =async (data) => {const userinfo={
+    fullName:data.fullName,
+    email:data.email,
+    password:data.password
+  }
+  await axios.post("http://localhost:4001/user/signup",userinfo).
+  then((res)=>{
+  console.log(res.data);
+    if(res.data){
+      toast.success("signup successfully")
+    }
+    localStorage.setItem("users",JSON.stringify(res.data.user))
+  }).catch((err)=>{
+    if(err.response){
+       console.log(err)
+    toast.error("signup error : "+ err.response.data.message);
+    }
+   
+  })
+}
   return (
     <>
     <div className='flex h-screen items-center justify-center '>
@@ -23,8 +44,8 @@ const Signup = () => {
     <div className='mt-4 space-y-2'>
         <span>Name : </span>
         <br/>
-        <input type='text' placeholder='Enter Your FullName' className='w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:text-white' {...register("name", { required: true })}/>
-                <br/> {errors.name && < span className='text-sm text-red-500'>This field is required</span>}
+        <input type='text' placeholder='Enter Your FullName' className='w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:text-white' {...register("fullName", { required: true })}/>
+                <br/> {errors.fullName && < span className='text-sm text-red-500'>This field is required</span>}
         <br/>
         <span>Email : </span>
         <br/>

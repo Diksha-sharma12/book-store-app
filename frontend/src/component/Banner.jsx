@@ -1,5 +1,4 @@
 import React from 'react';
-import book1imp from '../../public/book1img.jpg'
 const Banner = () => {
   return (
     <>
@@ -37,10 +36,10 @@ const Banner = () => {
   />
 </label>
         </div>
-        <button className="mt-6 btn btn-secondary">Secondary</button>
+        <button className="mt-6 btn btn-secondary">Get Started        </button>
         </div>
         <div className='order-1 w-full md:w-1/2 '>
-           <img src={book1imp} className='w-full h-full object-contain border-rounded'></img>
+           <img src={"/book1img.jpg"} className='w-full h-full object-contain border-rounded'></img>
         </div>
     </div>
     </>
